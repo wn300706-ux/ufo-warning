@@ -30,3 +30,123 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+#form-section input[name="age"] {
+  width: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#form-section button {
+  border: 5px solid black;
+}
+
+#form-section fieldset {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-top: 1.3rem;
+  padding-bottom: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#webform {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+#form-info h2 {
+  margin-bottom: 1rem;
+}
+
+#form-info p {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+}
+
+.form-group {
+  display: grid;
+  gap: 1.2rem;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+}
+
+input {
+  padding: 0.25rlh;
+  border-radius: 10px;
+  box-shadow: 0px 1px 2px #0001;
+}
+
+button {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.25rlh 0.5rlh;
+  cursor: pointer;
+}
+
+.error-message {
+  color: darkred;
+}
+
+/* Form layout */
+form {
+  accent-color: royalblue;
+}
+
+:focus-visible {
+  outline: 2px solid royalblue;
+  outline-offset: 1px;
+}
+
+button:hover {
+  outline: 2px solid lightgrey;
+  outline-offset: 1px;
+}
+
+button:active {
+  outline: 2px solid lightgrey;
+  outline-offset: 1px;
+}
+
+.error-message {
+  display: none;
+}
+
+.form-group:has(:required) {
+  label::after {
+    content: "*";
+    color: red;
+  }
+}
+
+.form-group:has(:user-valid) {
+  input {
+    outline: 3px solid green;
+    border-color: darkgreen;
+  }
+}
+
+.form-group:has(:user-invalid) {
+  input {
+    outline: 3px solid red;
+    border-color: darkred;
+  }
+  .error-message {
+    display: block;
+  }
+}

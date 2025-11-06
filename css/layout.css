@@ -6,6 +6,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.sub {
+  margin-left: -8.9rem;
+}
+
 main {
   display: grid;
   row-gap: 1rem;
