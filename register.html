@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,10 +37,99 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>RAPPORTER EN UFO I FORKLÆDNING</h2>
+          <p>
+            Skriv her, hvis du har obsereveret noget, der lignede noget normal,
+            men opførte sig mærkeligt.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset>
+            <div class="form-group">
+              <legend>Personlige oplysninger</legend>
+
+              <label>Fornavn:</label>
+              <input type="text" name="fornavn" minlength="2" required />
+              <p class="error-message">Please enter a value</p>
+
+              <label>Efternavn:</label>
+              <input type="text" name="efternavn" minlength="2" required />
+              <p class="error-message">Please enter a value</p>
+
+              <label>E-mail:</label>
+              <input type="email" name="email" minlength="2" required />
+              <p class="error-message">Please enter a value</p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <legend>Observation</legend>
+
+              <label>Hvor skete observationen?</label>
+              <input type="text" name="lokation" minlength="8" required />
+              <p class="error-message">Please enter a value</p>
+
+              <p>Hvilken type forklædning havde UFO’en?</p>
+              <label for="tjener">
+                <input
+                  type="radio"
+                  id="tjener"
+                  name="forklaedning"
+                  value="tjener"
+                  minlength="8"
+                  required
+                />
+                Som en tjener
+              </label>
+              <p class="error-message">Please enter a value</p>
+
+              <label for="politibetjent">
+                <input
+                  type="radio"
+                  id="politibetjent"
+                  name="forklaedning"
+                  value="politibetjent"
+                  minlength="8"
+                  required
+                />
+                Som en politibetjent
+              </label>
+              <p class="error-message">Please enter a value</p>
+
+              <label for="andet">
+                <input
+                  type="radio"
+                  id="andet"
+                  name="forklaedning"
+                  value="andet"
+                  minlength="8"
+                  required
+                />
+                Noget andet
+              </label>
+              <p class="error-message">Please enter a value</p>
+
+              <label>Hændelsesdato:</label>
+              <input type="date" name="dato" minlength="8" required />
+              <p class="error-message">Please enter a value</p>
+
+              <label>Tid for hændelse:</label>
+              <input type="time" name="tid" minlength="8" required />
+              <p class="error-message">Please enter a value</p>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <legend>Beskrivelse af hændelsen</legend>
+
+              <textarea name="details" minlength="8"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
