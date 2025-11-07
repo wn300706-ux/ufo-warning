@@ -43,46 +43,82 @@
             men opførte sig mærkeligt.
           </p>
         </article>
-        <form id="webform">
+        <form id="webform" aria-label="Rapporter en UFO i forklædning">
           <fieldset>
+            <legend>Personlige oplysninger</legend>
             <div class="form-group">
-              <legend>Personlige oplysninger</legend>
-
               <label>Fornavn:</label>
-              <input type="text" name="fornavn" minlength="2" required />
-              <p class="error-message">Please enter a value</p>
+              <input
+                type="text"
+                id="fornavn"
+                placeholder="Indtast dit fornavn"
+                name="fornavn"
+                minlength="2"
+                required
+                aria-describedby="fornavn-input"
+              />
+              <p id="fornavn-input" class="error-message" hidden>
+                Input skal udflyldes
+              </p>
 
               <label>Efternavn:</label>
-              <input type="text" name="efternavn" minlength="2" required />
-              <p class="error-message">Please enter a value</p>
+              <input
+                type="text"
+                id="efternavn"
+                placeholder="Indtast dit efternavn"
+                name="efternavn"
+                minlength="2"
+                required
+                aria-describedby="efternavn-input"
+              />
+              <p id="efternavn-input" class="error-message" hidden>
+                Input skal udflyldes
+              </p>
 
               <label>E-mail:</label>
-              <input type="email" name="email" minlength="2" required />
-              <p class="error-message">Please enter a value</p>
+              <input
+                type="email"
+                id="email"
+                placeholder="Indtast din e-mail"
+                name="email"
+                minlength="2"
+                required
+                aria-describedby="email-input"
+              />
+              <p id="email-input" class="error-message" hidden>
+                Input skal udflyldes
+              </p>
             </div>
           </fieldset>
 
           <fieldset>
+            <legend>Observation</legend>
             <div class="form-group">
-              <legend>Observation</legend>
-
               <label>Hvor skete observationen?</label>
-              <input type="text" name="lokation" minlength="8" required />
-              <p class="error-message">Please enter a value</p>
+              <input
+                type="text"
+                id="lokation"
+                placeholder="Skriv en lokation eller addresse"
+                name="lokation"
+                minlength="8"
+                required
+              />
+              <p class="error-message">Input skal udflyldes</p>
 
-              <p>Hvilken type forklædning havde UFO’en?</p>
+              <p>Hvilken type forklædning havde UFO’en?:</p>
               <label for="tjener">
                 <input
                   type="radio"
                   id="tjener"
                   name="forklaedning"
                   value="tjener"
-                  minlength="8"
                   required
                 />
                 Som en tjener
               </label>
-              <p class="error-message">Please enter a value</p>
+              <p id="lokation-input" class="error-message">
+                Indtast venligst en værdi
+              </p>
 
               <label for="politibetjent">
                 <input
@@ -90,12 +126,11 @@
                   id="politibetjent"
                   name="forklaedning"
                   value="politibetjent"
-                  minlength="8"
                   required
                 />
                 Som en politibetjent
               </label>
-              <p class="error-message">Please enter a value</p>
+              <p class="error-message">Indtast venligst en værdi</p>
 
               <label for="andet">
                 <input
@@ -103,38 +138,42 @@
                   id="andet"
                   name="forklaedning"
                   value="andet"
-                  minlength="8"
                   required
                 />
                 Noget andet
               </label>
-              <p class="error-message">Please enter a value</p>
+              <p class="error-message">Indtast venligst en værdi</p>
 
               <label>Hændelsesdato:</label>
-              <input type="date" name="dato" minlength="8" required />
-              <p class="error-message">Please enter a value</p>
+              <input type="date" id="haendelsesdato" name="dato" required />
+              <p class="error-message">Indtast venligst en værdi</p>
 
               <label>Tid for hændelse:</label>
-              <input type="time" name="tid" minlength="8" required />
-              <p class="error-message">Please enter a value</p>
+              <input type="time" id="tid_for_haendelse" name="tid" required />
+              <p class="error-message">Indtast venligst en værdi</p>
             </div>
           </fieldset>
 
-          <fieldset>
-            <div class="form-group">
-              <legend>Beskrivelse af hændelsen</legend>
-
-              <textarea name="details" minlength="8"></textarea>
-            </div>
-          </fieldset>
-
-          <button type="submit">Send</button>
+          <button id="button" type="submit">Send</button>
         </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
         <article>
           <p class="placeholder">Opsummering</p>
+          <div>
+            <p>Fornavn: <span id="fornavn_output"></span></p>
+            <p>Efternavn: <span id="efternavn_output"></span></p>
+            <p>E-mail:<span id="email_output"></span></p>
+            <p>
+              Hvor skete observationen:<span id="observation_output"></span>
+            </p>
+            <p>Tjener:<span id="tjener_output"></span></p>
+            <p>Politibetjent:<span id="politibetjent_output"></span></p>
+            <p>Andet:<span id="andet_output"></span></p>
+            <p>Hændelsesdato:<span id="haendelsesdato_output"></span></p>
+            <p>Tid for hændelse:<span id="tid_for_haendelse_output"></span></p>
+          </div>
         </article>
       </section>
     </main>
@@ -165,6 +204,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>

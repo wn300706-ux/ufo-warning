@@ -85,6 +85,7 @@ label:has(input) {
 }
 
 input {
+  background-color: white;
   padding: 0.25rlh;
   border-radius: 10px;
   box-shadow: 0px 1px 2px #0001;
@@ -149,4 +150,35 @@ button:active {
   .error-message {
     display: block;
   }
+}
+
+#form-summary {
+  gap: 0.5rem;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding-top: 1.3rem;
+  padding-bottom: 1.6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 5.8rem;
+}
+
+#form-summary p {
+  margin-top: 0.1rem;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#form-summary div {
+  text-align: left;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1rem;
 }
