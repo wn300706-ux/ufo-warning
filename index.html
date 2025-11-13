@@ -18,7 +18,10 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html" class="logo-link">
+            <img src="img/Lotus logo bounds.svg" alt="Lotus" class="logo-img" />
+            <span class="logo-text">Ministeriet for Samfundssikkerhed</span>
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -37,8 +40,8 @@
         <div>
           <h1>DANMARK INFILTRERET AF ULOVLIGE RUMVÆSNER</h1>
           <p class="sub">
-            Her er Ministeriet for Samfundssikkerhed og Beredskabs
-            retningslinjer
+            Her er retningslinjerne fra Ministeriet for Samfundssikkerhed og
+            oplysninger om den aktuelle situation.
           </p>
         </div>
       </div>
@@ -46,53 +49,90 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img
+            src="img/Firefly_Gemini Flash_generer et teaser billede af en grøn ufos hoved og overkrop. Brug den her som referen 776695.png"
+            alt="teaser_img"
+          />
           <div class="daily_text">
             <h2>NÆRKONTAKT</h2>
-            <p>Tæt nærkontakt med en UFO? Her er 3 overlevelsesstrategier.</p>
-            <a href="" class="cta_btn">Se mere</a>
+            <p>
+              Tæt nærkontakt med en UFO? Her er 3 måder at genkende dem i
+              forklædning.
+            </p>
+            <a href="instruction.html" class="cta_btn">Se mere</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/check_rapport_black_1.svg" alt="check_img" />
           <div class="daily_text">
             <h2>HAR DU SET EN UFO?</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Ministeriet indsamler rapporter om UFO-aktiviteter i Danmark.
+              Bidrag med dine observationer og bliv en del af noget større for
+              Kongeriget!
             </p>
-            <a href="" class="cta_btn">Inberet</a>
+            <a href="register.html" class="cta_btn">Inberet</a>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/infoai.svg" alt="info" />
           <div class="daily_text">
-            <h2>OVERSKRIFT</h2>
-            <p>Side med valgfrit indhold</p>
+            <h2>YDERLIGERE INFORMATIONER</h2>
+            <p>
+              Her finder du baggrundsviden og ekstra materiale om den aktuelle
+              situation.
+            </p>
             <a href="" class="cta_btn">Se mere</a>
           </div>
         </article>
       </section>
       <section id="breaking">
         <article class="news_card">
-          <h3>Kvinde forveklser sin mand med en UFO</h3>
+          <h3>Kvinde forveksler sin mand med en UFO</h3>
           <p>Det kan være svært at se forskel, men...</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img src="img/disguise.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popop-ufo">Læs mere</button>
         </article>
-        <article class="news_card">
-          <h3>Blå bylder</h3>
+
+<div popover="auto" id="popop-ufo" class="popover-box">
+  <h3>UFO forvekslede med et rigtigt menneske!</h3>
+  <p>I dag forvekslede en kvinde sin mand med en rumvæsen i Sønderjylland. Ministeriet opfordrer alle borgere med øget opmærksomhed på ens omgivelser. 
+    </p>
+    <button popovertarget="popop-ufo"></button>
+</div>
+
+        <article id="greencard" class="news_card">
+          <h3>UFO-feber</h3>
           <p>Kan være tegn på at du er smittet,...</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img
+            src="img/Syg.png"
+            alt="news_img"
+          />
+          <button class="cta_btn" popovertarget="popover-green">Læs mere</a>
         </article>
+
+<div popover="auto" id="popover-green" class="popover-box">
+  <h3>Højt antal af danskere, der er smittet med den nye UFO-feber!</h3>
+  <p>De seneste statistikker fra Ministeriet af Samfundssikkerhed viser, at et højt antal af danskere er smittet med en ny form for feber, der stammer fra de ulovlige rumvæsner i Danmark. </p>
+  <button popovertarget="popover-green"></button>
+</div>
+
         <article class="news_card">
-          <h3>UFO set i KEAs kantine</h3>
-          <p>Det var bare ikke en sløv studerende. Men en ægte UFO,...</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>UFO set i EKs kantine</h3>
+          <p>Det var bare ikke en sløv studerende, men en ægte UFO,...</p>
+          <img
+            src="img/Firefly_Gemini Flash_generer et billede af en grøn rumvæsen der vandrer rundt i en kantine fyldt med almin 889805.png"
+            alt="news_img"
+          />
+          <button class="cta_btn" popovertarget="popover-kantine">Læs mere</a>
         </article>
-      </section>
+
+<div popover="auto" id="popover-kantine" class="popover-box">
+  <h3>UFO set i Erhvervsakademi Københavns kantine på Nørrebro </h3>
+  <p>I hjertet af København blev der set et ulovligt rumvæsen, forklædt som en studerende i EK's kantine. </p>
+  <button popovertarget="popover-kantine"></button>
+</div>
+</section>
     </main>
 
     <footer>

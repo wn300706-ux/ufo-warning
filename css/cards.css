@@ -91,3 +91,21 @@
   content: "\2192";
   margin-left: 1rem;
 }
+
+#greencard {
+  background-color: #2c6f74;
+}
+
+#greencard h3 {
+  color: white;
+}
+
+#greencard p {
+  color: white;
+}
+
+#greencard .cta_btn {
+  background-color: #ffffff;
+  color: #2c6f74;
+  font-weight: 500;
+}

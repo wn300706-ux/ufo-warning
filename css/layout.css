@@ -14,6 +14,7 @@ body {
 main {
   display: grid;
   row-gap: 1rem;
+  margin-bottom: 15rem;
 }
 main > *:not(:first-child) {
   margin: 0 1rem;
@@ -21,6 +22,7 @@ main > *:not(:first-child) {
 main {
   grid-template-rows: min-content min-content 1fr min-content;
 }
+
 #instruction main {
   grid-template-rows: min-content min-content min-content 1fr min-content;
 }
@@ -63,6 +65,47 @@ footer ul {
 #breaking {
   grid-template-rows: repeat(auto-fit, minmax(50px, min-content));
   gap: 0;
+}
+
+.logo-img {
+  display: block;
+  height: 40px;
+  width: auto;
+  padding: 0rem;
+}
+
+.teaser_img {
+  height: auto;
+  width: auto;
+}
+
+.check_img {
+  height: auto;
+  width: auto;
+}
+
+.info_img {
+  height: auto;
+  max-width: 100%;
+}
+
+.cta_btn {
+  border: none;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 24px;
 }
 
 @media (width > 600px) {
