@@ -108,6 +108,64 @@ footer ul {
   font-size: 24px;
 }
 
+.titel-section {
+  display: grid;
+  grid-template-columns: min(100%, 65ch);
+  place-content: center;
+  gap: 2px;
+}
+
+details {
+  outline: 3px solid #2c6f74;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+
+summary {
+  color: #ffffff;
+  background-color: #2c6f74;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* Fjern eksisterende pil */
+summary::marker {
+  content: none;
+}
+
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+[open] summary::after {
+  content: "–";
+}
+
+#black {
+  width: 120px;
+  height: auto;
+}
+
+h1 {
+  margin-left: 5rem;
+}
+
+p.sub {
+  margin-left: 5rem;
+}
+
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;
