@@ -66,8 +66,8 @@
 
   /* Infographics */
   --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #add8e6;
-  --color-infobox-2-bg: #ffa500;
+  --color-infobox-1-bg: #f5f7f8;
+  --color-infobox-2-bg: #f5f7f8;
 }
 
 .menuItem {
@@ -85,9 +85,13 @@
 .popover-box {
   max-width: 500px;
   top: 35%;
-  left: 35%;
+  left: 33%;
   padding: 1.5rem;
   max-height: 90vh;
   max-width: 50ch;
   width: 90vw;
+}
+
+[popover]::backdrop {
+  backdrop-filter: blur(5px);
 }
