@@ -166,6 +166,23 @@ p.sub {
   margin-left: 5rem;
 }
 
+#toggle {
+  padding: 10px;
+}
+
+li {
+  margin-top: 0.4rem;
+  margin-right: 1rem;
+}
+
+#firstknap {
+  margin-right: 0.1rem;
+}
+
+#secondknap {
+  gap: 5px;
+}
+
 @media (width > 600px) {
   #frontpage > main {
     grid-template-columns: 6fr 3fr;

@@ -109,3 +109,7 @@
   color: #2c6f74;
   font-weight: 500;
 }
+
+.cta_btn:hover {
+  background-color: lightgrey;
+}

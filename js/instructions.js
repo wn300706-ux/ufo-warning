@@ -42,3 +42,12 @@ function Ben() {
     "Advarsel: Vær forsigtig, deres ben har en farlig rækkevide.";
   document.querySelector("#Hotspot1 path").style.fill = "White";
 }
+
+const html = document.querySelector("html");
+const btn = document.querySelector("#toggle");
+
+function toggleTheme() {
+  html.classList.toggle("dark");
+}
+
+btn.addEventListener("click", toggleTheme);

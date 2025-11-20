@@ -24,9 +24,12 @@
           </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
+          <li><a id="firstknap" class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li><a id="secondknap"class="menuItem" href="register.html">Indberet</a></li>
+          <li><button id="toggle" class="togglebutton">Dark Mode</button></li>
         </ul>
+
+
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -59,15 +62,15 @@
               Tæt nærkontakt med en UFO? Her er 3 måder at genkende dem i
               forklædning.
             </p>
-            <details name="my-detail">
-  <summary>Titel 1</summary>
+            <details id="dailycards" name="my-detail">
+  <summary>Sådan genkender man et forklædt rumvæsen</summary>
 <section class="titel-section">
 
   
   <div>
-    <p>Fold mig ud 1</p>
+    <p>Her er de mest almindelige tegn</p>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis recusandae saepe, fugiat officia impedit assumenda ipsa repudiandae odio ducimus laboriosam, laudantium distinctio illo voluptatem tenetur beatae quo!</p>
+      <p>Være opmærksom på at forklædte rumvæsner kan virke næsten menneskelige, men der er små detaljer, som ofte afslører dem som UFO. Mange borgere i forskellige regioner i Danmark har rapporteret om mærkelige bevægelser eller et ansigtsudtryk, der viker besynderlig. Læg mærke til hovedet, der virker unormal. Hvis du oplever flere unormale tegn på en gang, anbefales det at holde afstand og kontakte politiet, samt informere ministeriet. </p>
       <a href="instruction.html" class="cta_btn">Se mere</a>
     </div>
   </div>
@@ -84,15 +87,15 @@
               Bidrag med dine observationer og bliv en del af noget større for
               Kongeriget!
             </p>
-            <details name="my-detail">
-  <summary>Titel 2</summary>
+            <details id="dailycards" name="my-detail">
+  <summary>Anmeld dine UFO-observationer</summary>
 <section class="titel-section">
 
   
   <div>
-    <p>Fold mig ud 2</p>
+    <p>Sådan udfylder du din indberetning</p>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis recusandae saepe, fugiat officia impedit assumenda ipsa repudiandae odio ducimus laboriosam, laudantium distinctio illo voluptatem tenetur beatae quo!</p>
+      <p>Hjælp ministeriet med at håndtere UFO-aktivitet. Dine observationer er vigtige med bekæmpelsen. Noter tidspunkt og sted osv. Alle rapporter behandles fortroligt og er med til at bidrage direkte til vor lands sikkerhed. </p>
       <a href="register.html" class="cta_btn">Inberet</a>  
     </div>
   </div>
@@ -101,22 +104,22 @@
           </div>
         </article>
         <article class="daily_card">
-          <img src="img/infoai.svg" alt="info" />
+          <img src="img/infowhite.svg" alt="info" />
           <div class="daily_text">
             <h2>YDERLIGERE INFORMATIONER</h2>
             <p>
               Her finder du baggrundsviden og ekstra materiale om den aktuelle
               situation.
             </p>
-            <details name="my-detail">
-  <summary>Titel 3</summary>
+            <details id="dailycards" name="my-detail">
+  <summary>Her kan du finde flere informationer</summary>
 <section class="faq-section">
 
   
   <div>
-    <p>Fold mig ud 3</p>
+    <p>Dybere indblik om situationen</p>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis recusandae saepe, fugiat officia impedit assumenda ipsa repudiandae odio ducimus laboriosam, laudantium distinctio illo voluptatem tenetur beatae quo!</p>
+      <p>Her har vi samlet baggrundsviden, noter og analyser, som kan hjælpe dig med at få en bedre forståelse af situationen. </p>
       <a href="" class="cta_btn">Se mere</a>
     </div>
   </div>
@@ -147,7 +150,7 @@
             src="img/Syg.png"
             alt="news_img"
           />
-          <button class="cta_btn" popovertarget="popover-green">Læs mere</a>
+          <button class="cta_btn" popovertarget="popover-green">Læs mere</button>
         </article>
 
 <div popover="auto" id="popover-green" class="popover-box">
@@ -200,7 +203,8 @@
         </ul>
       </nav>
     </footer>
-    <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
+    <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

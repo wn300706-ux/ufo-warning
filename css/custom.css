@@ -95,3 +95,71 @@
 [popover]::backdrop {
   backdrop-filter: blur(5px);
 }
+
+.togglebutton {
+  padding: 0.6rem 1.5rem;
+  background-color: #f5f7f8;
+  border-radius: 10px;
+  color: #103d42;
+  font-weight: 600;
+  border: none;
+  height: 39px;
+  font-size: medium;
+}
+
+.togglebutton:hover {
+  background-color: var(--color-link-hover);
+}
+
+.togglebutton:active {
+  background-color: var(--color-link-active);
+}
+
+#toggle {
+  margin-top: -0.5rem;
+  padding: 0.4rem 1.5rem;
+  border-radius: 10px;
+  line-height: 1.2;
+}
+
+li {
+  margin-top: 1.2rem;
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+html.dark {
+  color-scheme: dark;
+
+  /* Baggrunde */
+  --color-bg: #000;
+  --color-head-bg: #1a1a1a;
+  --color-logotype-bg: #1a1a1a;
+  --color-menu-bg: #1a1a1a;
+
+  /* Tekst */
+  --color-text: #fff;
+  --color-text-inverted: #fff;
+  --color-heading: darkgrey;
+
+  /* Infographics */
+  --color-info-bg: #1a1a1a;
+  --color-infobox-1-bg: #1a1a1a;
+  --color-infobox-2-bg: #1a1a1a;
+
+  /* Cards */
+  --color-card-bg: #1a1a1a;
+  --color-cta-card-bg: #2c6f74;
+  --color-news-bg: #1a1a1a;
+  --color-cta-newscard-bg: #2c6f74;
+
+  /* Links */
+  --color-link-bg: #f5f7f8;
+  --color-link-hover: darkgrey;
+  --color-link-active: #99958f;
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
