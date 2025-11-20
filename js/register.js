@@ -1,3 +1,5 @@
+console.log("Loaded");
+
 const form = document.querySelector("form");
 
 const fornavnOutput = document.querySelector("#fornavn_output");
@@ -45,3 +47,12 @@ function handleSubmit(event) {
 
 form.addEventListener("invalid", cancelPopup, true);
 form.addEventListener("submit", handleSubmit);
+
+const html = document.querySelector("html");
+const btn = document.querySelector("#toggle");
+
+function toggleTheme() {
+  html.classList.toggle("dark");
+}
+
+btn.addEventListener("click", toggleTheme);

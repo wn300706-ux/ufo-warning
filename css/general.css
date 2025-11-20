@@ -136,3 +136,7 @@ nav a:active {
 footer a {
   font-size: 0.7rem;
 }
+
+summary:hover {
+  background-color: lightgrey;
+}
